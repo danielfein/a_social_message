@@ -15,11 +15,11 @@ return [
     */
 
         'twitter' => [
-    'client_id' => 'FRSn4KiB9HK4QmAXCBklzUr8T',
-    'client_secret' => '0WHAY72PBM5tK0vdRM8CiqmQrZPHieNexQuALaza3XKg6cPskG',
+    'client_id' => 'mHxzsTxrl5TPhJPxDfoh0zeFx',
+    'client_secret' => 'x9FRUFnRIYv6vMWD3NTPiBfKA8ZCF1sGJ46rWo3mlHUTtB9oBO',
     'redirect' => 'http://nameless-lake-2987.herokuapp.com/login/twitter',
     ],
-    
+
     'mailgun' => [
         'domain' => '',
         'secret' => '',
