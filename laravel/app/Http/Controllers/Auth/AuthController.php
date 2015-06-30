@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\User;
 use Validator;
 use App\Http\Controllers\Controller;
+use App\AuthenticateUser as AuthenticateUser;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
 class AuthController extends Controller
@@ -43,7 +44,7 @@ class AuthController extends Controller
   public function login(AuthenticateUser $authenticateUser, Request $request, $provider = null) {
      return $authenticateUser->execute($request->all(), $this, $provider);
   }
-  
+
     protected function validator(array $data)
     {
         return Validator::make($data, [

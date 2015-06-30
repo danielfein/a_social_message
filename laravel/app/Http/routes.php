@@ -16,3 +16,8 @@ Route::get('/', function () {
 });
 
 Route::get('login/{provider?}', 'Auth\AuthController@login');
+
+Route::controllers([
+    'auth' => '\App\Http\Controllers\Auth\AuthController',
+    'password' => '\App\Http\Controllers\Auth\PasswordController',
+]);
