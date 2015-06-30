@@ -15,8 +15,8 @@ return [
     */
 
         'twitter' => [
-    'client_id' => 'FRSn4KiB9HK4QmAXCBklzUr8T',
-    'client_secret' => '0WHAY72PBM5tK0vdRM8CiqmQrZPHieNexQuALaza3XKg6cPskG',
+    'client_id' => 'mKVed7GWb9MxNItfSVTsZdW47',
+    'client_secret' => 'QQWUCBQpyw8GCk5655MVs5uoIRYLIGDHXDgxdKUCe870FjfSfd',
     'redirect' => 'http://nameless-lake-2987.herokuapp.com/login/twitter',
     ],
 
