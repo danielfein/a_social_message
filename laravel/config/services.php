@@ -15,8 +15,8 @@ return [
     */
 
         'twitter' => [
-    'client_id' => 'mHxzsTxrl5TPhJPxDfoh0zeFx',
-    'client_secret' => 'x9FRUFnRIYv6vMWD3NTPiBfKA8ZCF1sGJ46rWo3mlHUTtB9oBO',
+    'client_id' => 'FRSn4KiB9HK4QmAXCBklzUr8T',
+    'client_secret' => '0WHAY72PBM5tK0vdRM8CiqmQrZPHieNexQuALaza3XKg6cPskG',
     'redirect' => 'http://nameless-lake-2987.herokuapp.com/login/twitter',
   ],
 
@@ -25,8 +25,6 @@ return [
     'client_secret' => '66a2751fc0da076b2ad5f49f51110551',
     'redirect' => 'http://nameless-lake-2987.herokuapp.com/login/facebook',
     ],
-
-
     'mailgun' => [
         'domain' => '',
         'secret' => '',
