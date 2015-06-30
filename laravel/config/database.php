@@ -51,13 +51,13 @@ return [
             'database' => storage_path('database.sqlite'),
             'prefix'   => '',
         ],
-
+      
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => env('DB_HOST', 'localhost'),
-            'database'  => env('DB_DATABASE', 'forge'),
-            'username'  => env('DB_USERNAME', 'forge'),
-            'password'  => env('DB_PASSWORD', ''),
+            'host'      => env('DB_HOST', 'us-cdbr-iron-east-02.cleardb.net'),
+            'database'  => env('DB_DATABASE', 'heroku_d5948cedcd73194'),
+            'username'  => env('DB_USERNAME', 'b868476f9133ac'),
+            'password'  => env('DB_PASSWORD', 'd0122e92'),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
