@@ -48,7 +48,7 @@ class AuthController extends Controller
 
   public function userHasLoggedIn($user) {
     \Session::flash('message', 'Welcome, ' . $user->username);
-    return redirect('/dashboard');
+    return redirect('/dashboard')->with($user);
 }
 
     protected function validator(array $data)

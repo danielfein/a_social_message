@@ -15,16 +15,18 @@ return [
     */
 
         'twitter' => [
-    'client_id' => 'FRSn4KiB9HK4QmAXCBklzUr8T',
-    'client_secret' => '0WHAY72PBM5tK0vdRM8CiqmQrZPHieNexQuALaza3XKg6cPskG',
+    'client_id' => 'mHxzsTxrl5TPhJPxDfoh0zeFx',
+    'client_secret' => 'x9FRUFnRIYv6vMWD3NTPiBfKA8ZCF1sGJ46rWo3mlHUTtB9oBO',
     'redirect' => 'http://nameless-lake-2987.herokuapp.com/login/twitter',
   ],
 
   'facebook' => [
     'client_id' => '792281457545632',
     'client_secret' => '66a2751fc0da076b2ad5f49f51110551',
-    'redirect' => 'http://nameless-lake-2987.herokuapp.com/login/facebook',
+    'redirect' => 'http://nameless-lake-2987.herokuapp.com/login/twitter',
     ],
+
+
     'mailgun' => [
         'domain' => '',
         'secret' => '',
