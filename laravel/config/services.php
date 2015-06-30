@@ -20,11 +20,7 @@ return [
     'redirect' => 'http://nameless-lake-2987.herokuapp.com/login/twitter',
   ],
 
-  'facebook' => [
-    'client_id' => '792281457545632',
-    'client_secret' => '66a2751fc0da076b2ad5f49f51110551',
-    'redirect' => 'http://nameless-lake-2987.herokuapp.com/login/facebook',
-    ],
+
     'mailgun' => [
         'domain' => '',
         'secret' => '',

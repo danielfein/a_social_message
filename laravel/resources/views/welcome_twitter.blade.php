@@ -46,7 +46,7 @@
             <div class="content">
                 <div class="title">Laravel 5</div>
                 <div class="quote">{{ Inspiring::quote() }}</div>
-               {{ session('user') }}
+        bitch we did it
             </div>
         </div>
     </body>
