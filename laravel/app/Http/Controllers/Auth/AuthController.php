@@ -38,6 +38,12 @@ class AuthController extends Controller
      * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
+
+     // AuthController.php
+  public function login(AuthenticateUser $authenticateUser, Request $request, $provider = null) {
+     return $authenticateUser->execute($request->all(), $this, $provider);
+  }
+  
     protected function validator(array $data)
     {
         return Validator::make($data, [

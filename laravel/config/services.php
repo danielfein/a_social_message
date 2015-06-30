@@ -13,6 +13,12 @@ return [
     | to have a conventional place to find your various credentials.
     |
     */
+    'twitter' => [
+        'client_id' => 'FRSn4KiB9HK4QmAXCBklzUr8T',
+        'client_secret' => '0WHAY72PBM5tK0vdRM8CiqmQrZPHieNexQuALaza3XKg6cPskG',
+        'redirect' => 'http://nameless-lake-2987.herokuapp.com',
+    ],
+
 
     'mailgun' => [
         'domain' => '',
