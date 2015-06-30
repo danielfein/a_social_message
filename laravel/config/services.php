@@ -14,13 +14,12 @@ return [
     |
     */
 
-    'twitter' => [
-'client_id' => env('TWITTER_CLIENT_ID'),
-'client_secret' => env('TWITTER_CLIENT_SECRET'),
-'redirect' => 'http://nameless-lake-2987.herokuapp.com/login/twitter',
-],
-
-
+        'twitter' => [
+    'client_id' => 'FRSn4KiB9HK4QmAXCBklzUr8T',
+    'client_secret' => '0WHAY72PBM5tK0vdRM8CiqmQrZPHieNexQuALaza3XKg6cPskG',
+    'redirect' => 'http://nameless-lake-2987.herokuapp.com/login/twitter',
+    ],
+    
     'mailgun' => [
         'domain' => '',
         'secret' => '',
