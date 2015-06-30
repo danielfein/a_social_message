@@ -18,7 +18,7 @@ return [
 'client_id' => env('TWITTER_CLIENT_ID'),
 'client_secret' => env('TWITTER_CLIENT_SECRET'),
 'redirect' => 'http://nameless-lake-2987.herokuapp.com/dashboard',
-]
+],
 
 
     'mailgun' => [
