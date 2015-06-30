@@ -21,3 +21,7 @@ Route::controllers([
     'auth' => '\App\Http\Controllers\Auth\AuthController',
     'password' => '\App\Http\Controllers\Auth\PasswordController',
 ]);
+
+Route::get('/dashboard', function () {
+    return view('welcome_twitter');
+});

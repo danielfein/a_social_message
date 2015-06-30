@@ -46,6 +46,11 @@ class AuthController extends Controller
      return $authenticateUser->execute($request->all(), $this, $provider);
   }
 
+  public function userHasLoggedIn($user) {
+    \Session::flash('message', 'Welcome, ' . $user->username);
+    return redirect('/dashboard');
+}
+
     protected function validator(array $data)
     {
         return Validator::make($data, [
