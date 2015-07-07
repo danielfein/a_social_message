@@ -24,6 +24,9 @@ class AuthController extends Controller
 
     use AuthenticatesAndRegistersUsers;
 
+    protected $loginPath = '';
+    protected $redirectPath = '';
+
     /**
      * Create a new authentication controller instance.
      *
@@ -42,14 +45,14 @@ class AuthController extends Controller
      */
 
      // AuthController.php
-  public function login(AuthenticateUser $authenticateUser, Request $request, $provider = null) {
-     return $authenticateUser->execute($request->all(), $this, $provider);
-  }
+    public function login(AuthenticateUser $authenticateUser, Request $request, $provider = null) {
+        return $authenticateUser->execute($request->all(), $this, $provider);
+    }
 
-  public function userHasLoggedIn($user) {
-    \Session::flash('message', 'Welcome, ' . $user->username);
-    return redirect('/dashboard');
-}
+    public function userHasLoggedIn($user) {
+        \Session::flash('message', 'Welcome, ' . $user->username);
+        return redirect('');
+    }
 
     protected function validator(array $data)
     {

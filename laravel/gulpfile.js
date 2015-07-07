@@ -1,5 +1,7 @@
 var elixir = require('laravel-elixir');
 
+elixir.config.sourcemaps = false;
+
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
@@ -12,5 +14,13 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
-    mix.sass('app.scss');
+    mix.sass('login.scss', 'public/css/login.css');
+    mix.sass('signup.scss', 'public/css/signup.css');
+    mix.sass('reset_password.scss', 'public/css/reset_password.css');
+
+    mix.version([
+        'public/css/login.css',
+        'public/css/signup.css',
+        'public/css/reset_password.css'
+    ]);
 });

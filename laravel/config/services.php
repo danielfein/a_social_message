@@ -14,10 +14,16 @@ return [
     |
     */
 
-        'twitter' => [
+    'twitter' => [
     'client_id' => 'mKVed7GWb9MxNItfSVTsZdW47',
     'client_secret' => 'QQWUCBQpyw8GCk5655MVs5uoIRYLIGDHXDgxdKUCe870FjfSfd',
     'redirect' => 'http://nameless-lake-2987.herokuapp.com/login/twitter',
+    ],
+
+    'facebook' => [
+    'client_id' => '209061109194862',
+    'client_secret' => 'f7272fd1dd0264fc09f1807f6d5e924b',
+    'redirect' => 'http://localhost:8000/login/facebook',
     ],
 
 
