@@ -6,6 +6,8 @@
     <div class="container">
         @if(Auth::check())
             <h1>Welcome Aboard</h1>
+            <a href="/Messages" class="btn btn-primary btn-lg btn-block">Messages</a>
+
         @else
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
@@ -23,7 +25,7 @@
                                 @if (count($errors))
                                     <div class="alert alert-danger">{{ $errors->first() }}</div>
                                 @endif
-                                
+
                                 {!! csrf_field() !!}
 
                                 <div class="form-group">
@@ -36,7 +38,7 @@
                                     <label for="remember" class="pull-left">
                                         <input type="checkbox" name="remember" id="remember" value="checked"> Remember me
                                     </label>
-                                    <label class="pull-right"><a href="{{ route('auth::getPasswordEmail') }}" title="Forgot Password">Forgot Password</a></label>                
+                                    <label class="pull-right"><a href="{{ route('auth::getPasswordEmail') }}" title="Forgot Password">Forgot Password</a></label>
                                 </div>
                                 <button type="submit" class="btn btn-primary btn-lg">Login</button>
                             </form><br/>
