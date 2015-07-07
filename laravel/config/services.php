@@ -21,8 +21,8 @@ return [
     ],
 
     'facebook' => [
-    'client_id' => '209061109194862',
-    'client_secret' => 'f7272fd1dd0264fc09f1807f6d5e924b',
+    'client_id' => '792281457545632',
+    'client_secret' => '66a2751fc0da076b2ad5f49f51110551',
     'redirect' => 'http://nameless-lake-2987.herokuapp.com/login/facebook',
     ],
 
