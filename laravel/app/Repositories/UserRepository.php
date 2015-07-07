@@ -6,6 +6,9 @@ use App\User;
 class UserRepository {
     public function findByUserNameOrCreate($userData) {
         $user = User::where('provider_id', '=', $userData->id)->first();
+        echo '<pre>';
+        print_r($userData);
+        dd();
         if(!$user) {
             $user = User::create([
                 'provider_id' => $userData->id,
