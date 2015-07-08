@@ -15,6 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::get('messages', [
+    'as' => 'messages', 'uses' => 'MessagesController@index'
+]);
+
+
 Route::group(['prefix' => '', 'as' => 'auth::'], function () {
     Route::get('login', ['as' => 'getLogin', 'uses' => 'Auth\AuthController@getLogin']);
     Route::post('login', ['as' => 'postLogin', 'uses' => 'Auth\AuthController@postLogin']);

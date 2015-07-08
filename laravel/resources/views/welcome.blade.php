@@ -6,7 +6,7 @@
     <div class="container">
         @if(Auth::check())
             <h1>Welcome Aboard</h1>
-            <a href="/Messages" class="btn btn-primary btn-lg btn-block">Messages</a>
+            <a href="{{ route('auth::socialLogin')}} " class="btn btn-primary btn-lg btn-block">Messages</a>
 
         @else
             <div class="row">
