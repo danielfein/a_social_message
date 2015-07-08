@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 
 Route::get('messages', [
-    'as' => 'messages', 'uses' => 'MessagesController@index'
+    'as' => 'messagesHomepage', 'uses' => 'MessagesController@index'
 ]);
 
 
