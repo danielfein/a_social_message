@@ -16,7 +16,7 @@ class MessagesController extends Controller
     }
 
     public function index(){
-      $user = Auth::user(); what am i missing?
+      $user = Auth::user();
       print_r($user);
     }
 }
