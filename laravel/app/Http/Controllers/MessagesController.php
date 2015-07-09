@@ -17,7 +17,7 @@ class MessagesController extends Controller
 
     public function index(){
       $user = Auth::user();
-      return view('sendMessage');
+      return view('messages.send');
     }
 
     public function messageSend(){
