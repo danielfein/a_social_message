@@ -9,7 +9,7 @@
 
           {{!! Form::open() !!}}
               {{!! Form::text('message', "Enter your message here:") !!}}
-{{!! Form::submit('Click Me!') !! }}
+                {{!! Form::submit('Click Me!') !!}}
           {{!! Form::close() !!}}
         @endif
 </div>
