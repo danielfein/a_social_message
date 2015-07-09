@@ -11,14 +11,15 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
+Route::get('/', function () {
+    return view('welcome');
+});
+
+// Route::get('/', function()
+// {
+//     return Twitter::postTweet(['status' => 'Laravel is beautiful', 'format' => 'json']);
 // });
 
-Route::get('/', function()
-{
-    return Twitter::postTweet(['status' => 'Laravel is beautiful', 'format' => 'json']);
-});
 Route::get('messages', [
     'as' => 'messages', 'uses' => 'MessagesController@index'
 ]);
