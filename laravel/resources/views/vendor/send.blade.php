@@ -7,9 +7,9 @@
         @if(Auth::check())
 
 
-        {{ Form::open()}}
-            {{Form::label('message', "Message:")}}
-        {{ Form::close()}}
+          {{ Form::open()}}
+              {{Form::label('message', "Message:")}}
+          {{ Form::close()}}
         @else
 
 @endsection
