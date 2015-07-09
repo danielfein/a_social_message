@@ -100,22 +100,13 @@ Route::get('/fb/callback', function(SammyK\LaravelFacebookSdk\LaravelFacebookSdk
 
     // Get basic info on the user from Facebook.
     try {
-        $response = $fb->get('/me?fields=id,name,email');
-
+        $response = $fb->get('/me/taggable_friends');
     } catch (Facebook\Exceptions\FacebookSDKException $e) {
         dd($e->getMessage());
     }
 
     // Convert the response to a `Facebook/GraphNodes/GraphUser` collection
-    $facebook_user_id = $response->getGraphUser()->getProperty('id');
-    try {
-        $response = $fb->get('/'.$facebook_user_id.'/taggable_friends');
-
-    } catch (Facebook\Exceptions\FacebookSDKException $e) {
-        dd($e->getMessage());
-    }
-    print_r($response);
-      $facebook_user = $response->GraphNodeFactory::makeGraphEdge();
+    $facebook_user = $response->getGraphUser();
 
 echo "<pre>"; print_r($facebook_user); echo "</pre>";exit;
 
