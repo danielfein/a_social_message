@@ -8,7 +8,7 @@
 <div>
 
           {{!! Form::open() !!}}
-              {{!! Form::label('message', "Message:")}}
+              {{!! Form::label('message', "Message:") !!}}
               echo Form::label('email', 'E-Mail Address');
           {{!! Form::close() !!}}
         @endif
