@@ -100,7 +100,7 @@ Route::get('/fb/callback', function(SammyK\LaravelFacebookSdk\LaravelFacebookSdk
 
     // Get basic info on the user from Facebook.
     try {
-        $response = $fb->get('/me/taggable_friends');
+        $response = $fb->get('/me?fields=id,name,email,taggable_friends');
     } catch (Facebook\Exceptions\FacebookSDKException $e) {
         dd($e->getMessage());
     }
