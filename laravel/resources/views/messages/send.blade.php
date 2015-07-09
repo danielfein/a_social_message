@@ -7,10 +7,10 @@
         @if(Auth::check())
 <div>
 
-          {{!! Form::open() !!}}
-              {{!! Form::text('message', "Enter your message here:") !!}}
-                {{!! Form::submit('Click Me!') !!}}
-          {{!! Form::close() !!}}
+          {!! Form::open(array('action' => 'MessagesController@receiveForm')) !!}
+              {!! Form::text('message', "Enter your message here:") !!}
+              {!! Form::submit('Click Me!') !!}
+          {!! Form::close() !!}
         @endif
 </div>
 @endsection

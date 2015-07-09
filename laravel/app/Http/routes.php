@@ -20,8 +20,8 @@ Route::get('messages', [
     'as' => 'messages', 'uses' => 'MessagesController@index'
 ]);
 
-Route::get('messagesend', [
-    'as' => 'messagesend', 'uses' => 'MessagesController@messageSend'
+Route::get('receiveForm', [
+    'as' => 'receiveForm', 'uses' => 'MessagesController@receiveForm'
 ]);
 
 
