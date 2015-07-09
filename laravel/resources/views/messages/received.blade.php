@@ -7,7 +7,7 @@
         @if(Auth::check())
 <div>
 RECEIVED
-    {{ name }}
+    
 
 </div>
 @endif
