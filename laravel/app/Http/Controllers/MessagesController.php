@@ -20,7 +20,7 @@ class MessagesController extends Controller
       return view('messages.send');
     }
 
-    public function receiveForm(Request $request, $id){
+    public function receiveForm(Request $request){
       $user = Auth::user();
       //Need to receive input and send i
   $name = $request->input('message');
