@@ -25,11 +25,11 @@ class MessagesController extends Controller
       //Need to receive input and send i
   $name = $request->input('message');
 
+echo $name;
 
 
 
-
-     return view('messages.received',$name);
+     return view('messages.received');
     }
 
 }
