@@ -145,6 +145,7 @@ return [
         App\Providers\RouteServiceProvider::class,
 'Laravel\Socialite\SocialiteServiceProvider',
    'Collective\Html\HtmlServiceProvider',
+      'Thujohn\Twitter\TwitterServiceProvider',
     ],
 
     /*
@@ -194,6 +195,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
         'Laravel\Socialite\SocialiteServiceProvider',
+            'Twitter' => 'Thujohn\Twitter\Facades\Twitter',
 
     ],
 
