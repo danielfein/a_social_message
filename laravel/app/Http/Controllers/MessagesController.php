@@ -22,10 +22,12 @@ class MessagesController extends Controller
 
     public function receiveForm(){
       $user = Auth::user();
-      //Need to receive input and send it
+      //Need to receive input and send i
+      $name = Input::get('message');
 
 
-     return view('messages.received');
+
+     return view('messages.received',$name);
     }
 
 }
