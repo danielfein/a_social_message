@@ -7,9 +7,10 @@
         @if(Auth::check())
 <div>
 
-          {{!! Form::open()}}
+          {{!! Form::open() !!}}
               {{!! Form::label('message', "Message:")}}
-          {{!! Form::close()}}
+              echo Form::label('email', 'E-Mail Address');
+          {{!! Form::close() !!}}
         @endif
 </div>
 @endsection
