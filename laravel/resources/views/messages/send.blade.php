@@ -8,8 +8,8 @@
 <div>
 
           {{!! Form::open() !!}}
-              {{!! Form::label('message', "Message:") !!}}
-              echo Form::label('email', 'E-Mail Address');
+              {{!! Form::text('message', "Enter your message here:") !!}}
+{{!! Form::submit('Click Me!') !! }}
           {{!! Form::close() !!}}
         @endif
 </div>
