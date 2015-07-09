@@ -11,9 +11,9 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 
 Route::get('twitter/login', ['as' => 'twitter.login', function(){
     // your SIGN IN WITH TWITTER  button should point to this route

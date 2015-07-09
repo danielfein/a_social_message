@@ -18,7 +18,7 @@
                                     <a href="{{ route('auth::socialLogin', ['provider' => 'facebook']) }}" class="btn btn-primary btn-lg btn-block">Facebook</a>
                                 </div>
                                 <div class="col-md-6">
-                                    <a href="{{ route('auth::socialLogin', ['provider' => 'twitter']) }}" class="btn btn-primary btn-lg btn-block">Twitter</a>
+                                    <a href="{{ route('twitter/login', ['provider' => 'twitter']) }}" class="btn btn-primary btn-lg btn-block">Twitter</a>
                                 </div>
                             </div>
                             <form action="{{ route('auth::postLogin') }}" method="post" accept-charset="utf-8">
