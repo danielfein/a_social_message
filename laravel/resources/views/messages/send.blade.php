@@ -9,7 +9,7 @@
 
           {!! Form::open(array('action' => 'MessagesController@receiveForm')) !!}
               {!! Form::text('message', "Enter your message here:") !!}
-              {!! Form::file('image') !!}
+            
 
               <br>
               {!! Form::submit('Click Me!') !!}
