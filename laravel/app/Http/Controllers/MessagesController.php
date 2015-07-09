@@ -17,6 +17,15 @@ class MessagesController extends Controller
 
     public function index(){
       $user = Auth::user();
-      print_r($user);
+      return view('sendMessage');
     }
+
+    public function messageSend(){
+      $user = Auth::user();
+      //Need to receive input and send it
+
+
+//      return view('sendMessage');
+    }
+
 }

@@ -17,8 +17,13 @@ Route::get('/', function () {
 
 
 Route::get('messages', [
-    'as' => 'messagesHomepage', 'uses' => 'MessagesController@index'
+    'as' => 'messages', 'uses' => 'MessagesController@index'
 ]);
+
+Route::get('messagesend', [
+    'as' => 'messagesend', 'uses' => 'MessagesController@messageSend'
+]);
+
 
 
 Route::group(['prefix' => '', 'as' => 'auth::'], function () {
