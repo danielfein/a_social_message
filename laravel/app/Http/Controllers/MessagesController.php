@@ -25,7 +25,7 @@ class MessagesController extends Controller
       //Need to receive input and send it
 
 
-//      return view('sendMessage');
+     return view('messages.received');
     }
 
 }
