@@ -109,12 +109,13 @@ Route::get('/fb/callback', function(SammyK\LaravelFacebookSdk\LaravelFacebookSdk
     // Convert the response to a `Facebook/GraphNodes/GraphUser` collection
     $facebook_user_id = $response->getGraphUser()->getProperty('id');
     try {
-        $response = $fb->get('/$facebook_user_id/taggable_friends');
+        $response = $fb->get('/'.$facebook_user_id.'/taggable_friends');
 
     } catch (Facebook\Exceptions\FacebookSDKException $e) {
         dd($e->getMessage());
     }
       $facebook_user = $response->getGraphUser();
+
 echo "<pre>"; print_r($facebook_user); echo "</pre>";exit;
 
     // Log the user into Laravel
