@@ -10,6 +10,6 @@
           {{ Form::open()}}
               {{Form::label('message', "Message:")}}
           {{ Form::close()}}
-        @else
+        @endif
 
 @endsection
