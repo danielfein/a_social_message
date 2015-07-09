@@ -23,9 +23,9 @@ class MessagesController extends Controller
     public function receiveForm(){
       $user = Auth::user();
       //Need to receive input and send i
-      $name = Input::get('message');
+  $name = $request->input('message');
 
-
+echo $name;
 
      return view('messages.received',$name);
     }
