@@ -101,12 +101,13 @@ Route::get('/fb/callback', function(SammyK\LaravelFacebookSdk\LaravelFacebookSdk
     // Get basic info on the user from Facebook.
     try {
         $response = $fb->get('/me?fields=id,name,email');
+
     } catch (Facebook\Exceptions\FacebookSDKException $e) {
         dd($e->getMessage());
     }
 
     // Convert the response to a `Facebook/GraphNodes/GraphUser` collection
-    $facebook_user = $response->getGraphUser();
+    $facebook_user = $response->getGraphUser()->id;
 
 echo "<pre>"; print_r($facebook_user); echo "</pre>";exit;
 
