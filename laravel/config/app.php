@@ -146,6 +146,7 @@ return [
 'Laravel\Socialite\SocialiteServiceProvider',
    'Collective\Html\HtmlServiceProvider',
       'Thujohn\Twitter\TwitterServiceProvider',
+       SammyK\LaravelFacebookSdk\LaravelFacebookSdkServiceProvider::class,
     ],
 
     /*
@@ -160,6 +161,7 @@ return [
     */
 
     'aliases' => [
+          'Facebook' => SammyK\LaravelFacebookSdk\FacebookFacade::class,
       'Form' => 'Collective\Html\FormFacade',
       'Html' => 'Collective\Html\HtmlFacade',
         'App'       => Illuminate\Support\Facades\App::class,
