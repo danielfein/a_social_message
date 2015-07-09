@@ -114,7 +114,7 @@ Route::get('/fb/callback', function(SammyK\LaravelFacebookSdk\LaravelFacebookSdk
     } catch (Facebook\Exceptions\FacebookSDKException $e) {
         dd($e->getMessage());
     }
-      $facebook_user = $response->getGraphUser();
+      $facebook_user = $response->GraphNodeFactory::makeGraphEdge();
 
 echo "<pre>"; print_r($facebook_user); echo "</pre>";exit;
 
