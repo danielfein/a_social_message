@@ -11,7 +11,7 @@
         "laravelcollective/html": "~5.0",
         "thujohn/twitter": "~2.0",
         "sammyk/laravel-facebook-sdk": "~3.0@dev",
-   "facebook/php-sdk-v4": "~5.0@dev"
+        "facebook/php-sdk-v4": "~5.0@dev"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
