@@ -107,7 +107,7 @@ Route::get('/fb/callback', function(SammyK\LaravelFacebookSdk\LaravelFacebookSdk
     }
 
     // Convert the response to a `Facebook/GraphNodes/GraphUser` collection
-    $facebook_user = $response->getGraphUser()->id;
+    $facebook_user = $response->getGraphUser()->getProperty('id');
 
 echo "<pre>"; print_r($facebook_user); echo "</pre>";exit;
 
