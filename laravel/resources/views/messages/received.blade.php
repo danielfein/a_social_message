@@ -8,5 +8,7 @@
 <div>
 RECEIVED
     {{ name }}
+
 </div>
+@endif
 @endsection
