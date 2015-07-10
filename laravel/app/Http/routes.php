@@ -120,7 +120,7 @@ Route::get('fb/friends', function(SammyK\LaravelFacebookSdk\LaravelFacebookSdk $
         $fb->setDefaultAccessToken(Session::get('fb_user_access_token'));
         $response = $fb->get('/me?fields=id,name,email');
         $id = $response->getGraphUser()->getproperty('id');
-        $response = $fb->get("/v2.4/1129864463697388");
+        $response = $fb->get("/{$id}/taggable_friends");
         echo "<pre>"; print_r($response); echo "</pre>";exit;
         $session = new FacebookSession(Session::get('fb_user_access_token'));
         $request = new FacebookRequest( $session,
