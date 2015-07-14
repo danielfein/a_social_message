@@ -143,10 +143,10 @@ return [
         App\Providers\AppServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-'Laravel\Socialite\SocialiteServiceProvider',
-   'Collective\Html\HtmlServiceProvider',
-      'Thujohn\Twitter\TwitterServiceProvider',
-       SammyK\LaravelFacebookSdk\LaravelFacebookSdkServiceProvider::class,
+        'Laravel\Socialite\SocialiteServiceProvider',
+        'Collective\Html\HtmlServiceProvider',
+        'Thujohn\Twitter\TwitterServiceProvider',
+        SammyK\LaravelFacebookSdk\LaravelFacebookSdkServiceProvider::class,
     ],
 
     /*
@@ -197,7 +197,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
         'Laravel\Socialite\SocialiteServiceProvider',
-            'Twitter' => 'Thujohn\Twitter\Facades\Twitter',
+        'Twitter' => 'Thujohn\Twitter\Facades\Twitter',
 
     ],
 
