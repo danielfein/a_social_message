@@ -18,11 +18,11 @@ return [
      * your /.env file with your app ID and secret.
      */
     'facebook_config' => [
-        'app_id' => env('FACEBOOK_APP_ID'),
-        'app_secret' => env('FACEBOOK_APP_SECRET'),
+        'app_id' => '817593601681084',
+        'app_secret' => '81c5ece2bf7e6b5dee4a3a4af88aa5ba',
         'default_graph_version' => 'v2.4',
         //'enable_beta_mode' => true,
-        //'http_client_handler' => 'guzzle',
+  
     ],
 
     /*

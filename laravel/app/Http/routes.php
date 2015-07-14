@@ -118,10 +118,10 @@ echo "<pre>"; print_r($facebook_user); echo "</pre>";exit;
 Route::get('fb/friends', function(SammyK\LaravelFacebookSdk\LaravelFacebookSdk $fb){
 
         $fb->setDefaultAccessToken(Session::get('fb_user_access_token'));
-        $response = $fb->get('/me/photos');
-   /*     $id = $response->getGraphUser()->getproperty('id');
-        $response = $fb->get("/v2.4/1129864463697388");*/
-        echo "<pre>"; print_r($response->getGraphEdge()); echo "</pre>";exit;
+        $response = $fb->get('/me?fields=id,name,email');
+        $id = $response->getGraphUser()->getproperty('id');
+        $response = $fb->get("/me/taggable_friends");
+        echo "<pre>"; print_r($response); echo "</pre>";exit;
         $session = new FacebookSession(Session::get('fb_user_access_token'));
         $request = new FacebookRequest( $session,
                                         'GET',
