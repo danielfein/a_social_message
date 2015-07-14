@@ -14,8 +14,8 @@ return [
 	'REQUEST_TOKEN_URL'   => 'https://api.twitter.com/oauth/request_token',
 	'USE_SSL'             => true,
 
-	'CONSUMER_KEY'        => 'mHxzsTxrl5TPhJPxDfoh0zeFx',
-	'CONSUMER_SECRET'     => 'x9FRUFnRIYv6vMWD3NTPiBfKA8ZCF1sGJ46rWo3mlHUTtB9oBO',
-	'ACCESS_TOKEN'        => '',
-	'ACCESS_TOKEN_SECRET' => '',
+	'CONSUMER_KEY'        => env('TWITTER_CONSUMER_KEY'),
+	'CONSUMER_SECRET'     => env('TWITTER_CONSUMER_SECRET'),
+	'ACCESS_TOKEN'        => env('TWITTER_ACCESS_TOKEN'),
+	'ACCESS_TOKEN_SECRET' => env('TWITTER_ACCESS_TOKEN_SECRET'),
 ];
