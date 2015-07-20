@@ -40,7 +40,7 @@
                                     </label>
                                     <label class="pull-right"><a href="{{ route('auth::getPasswordEmail') }}" title="Forgot Password">Forgot Password</a></label>
                                 </div>
-                                <button type="submit" class="btn btn-primary btn-lg">Login</button>
+                                <button type="submit" class="btn btn-primary btn-lg">LogIn</button>
                             </form><br/>
                             <div><a href="{{ route('auth::getSignup') }}">Create an account</a></div>
                         </div>
